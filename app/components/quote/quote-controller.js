@@ -1,16 +1,22 @@
 (function(){
 	//Get your QuoteService
-	function QuoteController (){
-		var quoteController = new QuoteController
+	
+		var quote = new QuoteService()
 
-		quoteController.quoteOfTheDay()
-			.then(function (data){
-				var template = $('#quoteTemplate').html();
+		quote.getQuote(drawQuote)
+	
+	 function drawQuote(data){
+        quoteElem = $('#quote');
+      //  var data = JSON.parse(data)
+        var template = `<h3>${data.quote}</h3>
+						<p>${data.author}</p>`
+        quoteElem.append(template)
+		//console.log(data)
+    }		
+		
+		
+	
 
-				template = template.replace('{{ ??? }}', data.???)
-				template = template.replace("{{ ??? }}"), data.???)
-			})
-	}
-	QuoteController()
 	
 }())
+
