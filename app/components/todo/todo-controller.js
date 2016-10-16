@@ -21,7 +21,7 @@ function add() {
  
     var todos = get_todos();
     todos.push(task);
-   // localStorage.setItem('todo', JSON.stringify(todos));
+    localStorage.setItem('todo', JSON.stringify(todos));
  
     show();
  
@@ -32,7 +32,7 @@ function remove() {
     var id = this.getAttribute('id');
     var todos = get_todos();
     todos.splice(id, 1);
-   // localStorage.setItem('todo', JSON.stringify(todos));
+    localStorage.setItem('todo', JSON.stringify(todos));
  
     show();
  
