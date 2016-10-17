@@ -22,6 +22,7 @@ function upDateWeather(weather){
 						<h3>${ferTemp}&degF;</h3>
 						<h3>${celTemp}&degC;</h3>
 						<h5>${condition}</h5>
+						<img src="http://openweathermap.org/img/w/${weather.weather[0].icon}.png">
 						`
 		
 		weatherElem.append(template)
