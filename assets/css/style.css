@@ -1,7 +1,6 @@
 .row{
     color: #edc85c;
-    background-color: black;
-    opacity: .7;
+    background-color: grey;
+    opacity: .5;
     border-radius: 10px;
-    
 }
